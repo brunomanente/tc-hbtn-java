@@ -1,4 +1,3 @@
-package divisaoInteira;
 
 public class Numero {
 		
