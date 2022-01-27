@@ -13,7 +13,7 @@ public class Program {
         }
 
         try {
-            double lado2 = 5;
+            double lado2 = 3;
             double resultado = Quadrado.area(lado2);
             System.out.println(resultado);
         } catch (Exception ex) {
