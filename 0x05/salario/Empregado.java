@@ -1,6 +1,7 @@
 
 public class Empregado {
 	protected double salarioFixo;
+	public double calcularBonus;
 
 	public double getSalarioFixo() {
 		return salarioFixo;
