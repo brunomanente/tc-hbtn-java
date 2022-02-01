@@ -1,7 +1,12 @@
+import java.util.Locale;
 
 public class Program {
+	
 
 	public static void main(String[] args) {
+		
+		Locale.setDefault(new Locale("pt", "BR"));
+		
 		 try {
              Livro livro1 = new Livro(
                              "As barbas do imperador: D. Pedro II",
