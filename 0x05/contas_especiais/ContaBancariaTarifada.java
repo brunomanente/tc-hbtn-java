@@ -9,6 +9,7 @@ public class ContaBancariaTarifada extends ContaBancariaBasica {
 		// TODO Auto-generated constructor stub
 	}
 	
+	@Override
 	void depositar(double valor) throws OperacaoInvalidaException {
 		if(valor > 0) {
 			this.saldo = saldo + valor - 0.10;
@@ -19,7 +20,7 @@ public class ContaBancariaTarifada extends ContaBancariaBasica {
 	public int getQuantidadeTransacoes() {
 		return quantidadeTransacoes;
 	}
-
+	@Override
 	void sacar(double valor) throws OperacaoInvalidaException {
 		
 		if (valor < 0) {
