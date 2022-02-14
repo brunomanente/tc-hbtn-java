@@ -20,7 +20,7 @@ public class Celular {
 	}
 
 	public void adicionarContato(Contato adicionarContato) {
-		 
+
 		for (Contato contato : contatos) {
 			if (contato.getNome().equals(contato.getNome())) {
 				throw new IllegalArgumentException(
