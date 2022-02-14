@@ -73,7 +73,7 @@ public class Banco {
 		}
 		for(int i = 0; i < percorrerAgencia.getClientes().size(); i++) {
 			Cliente encontrarCliente = percorrerAgencia.getClientes().get(i);
-			System.out.println("Cliente: " + encontrarCliente.getNome() + "[" + (i + 1) + "] ");
+			System.out.println("Cliente: " + encontrarCliente.getNome() + " [" + (i + 1) + "] ");
 			
 			if(imprimeTransacao) {
 				for(int x = 0; x < encontrarCliente.getTransacoes().size(); x++) {
