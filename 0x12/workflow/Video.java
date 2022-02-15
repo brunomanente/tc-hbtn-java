@@ -1,16 +1,16 @@
 
 public class Video {
 		private String arquivo;
-		private FormatoVideo formado;
+		private FormatoVideo formato;
 		
 		public Video() {
 			
 		}
 
-		public Video(String arquivo, FormatoVideo formado) {
+		public Video(String arquivo, FormatoVideo formato) {
 			super();
 			this.arquivo = arquivo;
-			this.formado = formado;
+			this.formato = formato;
 		}
 
 		public String getArquivo() {
@@ -22,11 +22,11 @@ public class Video {
 		}
 
 		public FormatoVideo getFormado() {
-			return formado;
+			return formato;
 		}
 
 		public void setFormado(FormatoVideo formado) {
-			this.formado = formado;
+			this.formato = formado;
 		}
 		
 		
