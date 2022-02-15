@@ -2,7 +2,7 @@ package provedores;
 
 public class JadLog implements ProvedorFrete {
 	
-	private static TipoProvedorFrete TIPO_PROVEDOR_FRETE = TipoProvedorFrete.JDALOG;
+	private static TipoProvedorFrete TIPO_PROVEDOR_FRETE = TipoProvedorFrete.JADLOG;
 
 	@Override
 	public Frete calcularFrete(double peso, double valor) {
