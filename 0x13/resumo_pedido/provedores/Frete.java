@@ -1,5 +1,6 @@
 package provedores;
 
+
 public class Frete {
 	private double valor;
 	private TipoProvedorFrete tipoProvedorFrete;

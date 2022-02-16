@@ -11,7 +11,7 @@ public class Pedido {
 		this.codigo = codigo;
 		this.peso = peso;
 		this.total = total;
-		this.frete = frete;
+		
 	}
 
 	public int getCodigo() {
