@@ -6,6 +6,10 @@ public class AnalisadorFrase {
 		
 		TreeMap<String, Integer> map = new TreeMap<>();
 		
+		frase = frase.replace("?", "");
+		frase = frase.replace(".", "");
+		frase = frase.replace("!", "");
+		
 		String[] contagem = frase.split(" ");
 		
 		int qtdPalavras = 0;
