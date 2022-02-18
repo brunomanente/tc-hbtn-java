@@ -9,12 +9,12 @@ public class NumerosDuplicados {
         
         List<Integer> list = Arrays.stream(ints).boxed().collect(Collectors.toList());
 
-        HashSet<Integer> hashSet = new HashSet();
+        HashSet<Integer> hashSet = new HashSet<Integer>();
 
-        List<Integer> filtered = list.stream()
+        List<Integer> filtrarDuplicados = list.stream()
                 .filter(i -> !hashSet.add(i))
                 .collect(Collectors.toList());
 
-        return new TreeSet<>(filtered);
+        return new TreeSet<>(filtrarDuplicados);
     }
 }
