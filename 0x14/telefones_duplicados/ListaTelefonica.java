@@ -29,7 +29,7 @@ public class ListaTelefonica {
                 if (key.equals(nome)) {
                     System.out.println("Telefone jah existente para essa pessoa");
                 } else {
-                    System.out.println("Telefone jah existente para outra pessoa");
+                    System.out.println("Telefone jah pertence a outra pessoa");
                 }
             }
         }
