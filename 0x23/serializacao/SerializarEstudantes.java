@@ -50,16 +50,18 @@ public class SerializarEstudantes<T> {
 		}
 		
 	}
+	@SuppressWarnings("unchecked")
 	public List<Estudante> desserializar() {
 		
-		List<Estudante> leitura = null;		
+		List<Estudante> listaEstudante = null;		
 		FileInputStream fis = null;
 		ObjectInputStream ois = null;
 		try {
 			fis = new FileInputStream(nomeArquivo);
 			ois = new ObjectInputStream(fis);
+			
 			try {
-				leitura = (List<Estudante>) ois.readObject();
+				listaEstudante = (List<Estudante>) ois.readObject();
 			} catch (ClassNotFoundException e) {
 				e.printStackTrace();
 			}
@@ -77,7 +79,7 @@ public class SerializarEstudantes<T> {
 				}
 			}
 		}
-		return leitura;
+		return listaEstudante;
 	}
 	
 	
